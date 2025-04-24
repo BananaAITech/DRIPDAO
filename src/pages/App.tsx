@@ -224,7 +224,7 @@ function App() {
             <div className="px-6 py-4 bg-gray-200 border-t-2 h-[calc(100vh-380px)] border-gray-50 flex">
               <div className="w-[200px]">
                 <a
-                  href="#"
+                  href="https://x.com/dripdao_fun"
                   className="font-medium hover:underline"
                   target="_blank"
                 >
@@ -233,7 +233,7 @@ function App() {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="https://t.me/dripdao_fun"
                   className="font-medium hover:underline"
                   target="_blank"
                 >
