@@ -180,15 +180,16 @@ function App() {
                     <img src="/drip-network.png"></img>
                   </div>
                   <div className="">
-                    <h5 className="font-bold text-xl">Earn DRIP</h5>
+                    <h5 className="font-bold text-xl">Earn aDRIP</h5>
                     <p className="text-sm font-medium">
                       Stake{" "}
                       <span className="text-pink-400 font-bold">
-                        DRIP-BNB LP
+                        aDRIP-BNB LP
                       </span>
                     </p>
                   </div>
                 </div>
+                
                 <div className="w-1/6">
                   <p className="text-sm leading-4 font-medium">DRIP Earned</p>
                   <p className="text-xl leading-6 opacity-80 font-bold">
@@ -221,6 +222,159 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <div className="px-6 py-4 h- bg-white">
+              <div className="flex items-start flex-wrap">
+                <div className="flex items-center gap-2 w-1/4">
+                  <div className="w-12 h-12 rounded-full border-2 border-blue-300">
+                    <img src="/drip-network.png"></img>
+                  </div>
+                  <div className="">
+                    <h5 className="font-bold text-xl">Earn bDRIP</h5>
+                    <p className="text-sm font-medium">
+                      Stake{" "}
+                      <span className="text-pink-400 font-bold">
+                        bDRIP-BNB LP
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="w-1/6">
+                  <p className="text-sm leading-4 font-medium">DRIP Earned</p>
+                  <p className="text-xl leading-6 opacity-80 font-bold">
+                    {isConnected ? `${earnedAmt.toFixed(4)}` : `--`}
+                  </p>
+                  <p className="text-sm leading-4">
+                    {" "}
+                    {isConnected
+                      ? `~${(price * earnedAmt).toFixed(3)}`
+                      : `--`}{" "}
+                    USD
+                  </p>
+                </div>
+                <div className="w-1/4">
+                  <p className="text-sm leading-4 font-medium">Total Staked</p>
+                  <p className="text-xl leading-6 font-bold">
+                    {isConnected ? `${stakedAmount.toFixed(4)}` : `--`} DRIP-BNB
+                    LP
+                  </p>
+                </div>
+                <div className="w-1/3">
+                  <button
+                    onClick={() => {
+                      openStakeModal(true);
+                    }}
+                    className="block m-auto mt-2 bg-green-600 hover:bg-green-700 text-white px-10 py-2 text-[18px] font-bold rounded-md uppercase shadow-lg"
+                  >
+                    Stake
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+            <div className="px-6 py-4 h- bg-white">
+              <div className="flex items-start flex-wrap">
+                <div className="flex items-center gap-2 w-1/4">
+                  <div className="w-12 h-12 rounded-full border-2 border-blue-300">
+                    <img src="/drip-network.png"></img>
+                  </div>
+                  <div className="">
+                    <h5 className="font-bold text-xl">Earn cDRIP</h5>
+                    <p className="text-sm font-medium">
+                      Stake{" "}
+                      <span className="text-pink-400 font-bold">
+                        cDRIP-BNB LP
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="w-1/6">
+                  <p className="text-sm leading-4 font-medium">DRIP Earned</p>
+                  <p className="text-xl leading-6 opacity-80 font-bold">
+                    {isConnected ? `${earnedAmt.toFixed(4)}` : `--`}
+                  </p>
+                  <p className="text-sm leading-4">
+                    {" "}
+                    {isConnected
+                      ? `~${(price * earnedAmt).toFixed(3)}`
+                      : `--`}{" "}
+                    USD
+                  </p>
+                </div>
+                <div className="w-1/4">
+                  <p className="text-sm leading-4 font-medium">Total Staked</p>
+                  <p className="text-xl leading-6 font-bold">
+                    {isConnected ? `${stakedAmount.toFixed(4)}` : `--`} DRIP-BNB
+                    LP
+                  </p>
+                </div>
+                <div className="w-1/3">
+                  <button
+                    onClick={() => {
+                      openStakeModal(true);
+                    }}
+                    className="block m-auto mt-2 bg-green-600 hover:bg-green-700 text-white px-10 py-2 text-[18px] font-bold rounded-md uppercase shadow-lg"
+                  >
+                    Stake
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+
+            <div className="px-6 py-4 h- bg-white">
+              <div className="flex items-start flex-wrap">
+                <div className="flex items-center gap-2 w-1/4">
+                  <div className="w-12 h-12 rounded-full border-2 border-blue-300">
+                    <img src="/drip-network.png"></img>
+                  </div>
+                  <div className="">
+                    <h5 className="font-bold text-xl">Earn dDRIP</h5>
+                    <p className="text-sm font-medium">
+                      Stake{" "}
+                      <span className="text-pink-400 font-bold">
+                        dDRIP-BNB LP
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="w-1/6">
+                  <p className="text-sm leading-4 font-medium">DRIP Earned</p>
+                  <p className="text-xl leading-6 opacity-80 font-bold">
+                    {isConnected ? `${earnedAmt.toFixed(4)}` : `--`}
+                  </p>
+                  <p className="text-sm leading-4">
+                    {" "}
+                    {isConnected
+                      ? `~${(price * earnedAmt).toFixed(3)}`
+                      : `--`}{" "}
+                    USD
+                  </p>
+                </div>
+                <div className="w-1/4">
+                  <p className="text-sm leading-4 font-medium">Total Staked</p>
+                  <p className="text-xl leading-6 font-bold">
+                    {isConnected ? `${stakedAmount.toFixed(4)}` : `--`} DRIP-BNB
+                    LP
+                  </p>
+                </div>
+                <div className="w-1/3">
+                  <button
+                    onClick={() => {
+                      openStakeModal(true);
+                    }}
+                    className="block m-auto mt-2 bg-green-600 hover:bg-green-700 text-white px-10 py-2 text-[18px] font-bold rounded-md uppercase shadow-lg"
+                  >
+                    Stake
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+
             <div className="px-6 py-4 bg-gray-200 border-t-2 h-[calc(100vh-380px)] border-gray-50 flex">
               <div className="w-[200px]">
                 <a
