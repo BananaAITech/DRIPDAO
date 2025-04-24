@@ -395,6 +395,15 @@ function App() {
                     Telegram <FaExternalLinkAlt className="w-3 h-3" />
                   </div>
                 </a>
+                <a
+                  href="https://four.meme"
+                  className="font-medium hover:underline"
+                  target="_blank"
+                >
+                  <div className="flex items-center mt-2 gap-2 text-sm text-green-600">
+                    FOUR.MEME <FaExternalLinkAlt className="w-3 h-3" />
+                  </div>
+                </a>
               </div>
 
               <div className="w-[calc(100%-240px)] ml-10 flex flex-col">
